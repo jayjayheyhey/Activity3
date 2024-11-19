@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
     <header>
         <h1>My Portfolio</h1>
         <nav>
@@ -22,14 +24,12 @@
     </header>
 
     <section id="homepage">
-        <center>
-            <img src="Assets/PICTURE.png" alt="Profile Picture">
-        </center>
-        <h2>Hi! I'm Johanna R. Villahermosa</h2>
+        <h2>About Me</h2>
         <article>
             <p>This would be my first proper HTML website. I'm quite excited to learn about making websites but enough about that. I have had experience with several programming languages including <b>C, C++, Java,</b> and recently <b>HTML</b>. I'm excited to learn much more as the discussions progress.</p>
         </article>
     </section>
+
 
     <section id="projects">
         <h2>Projects</h2>
@@ -124,3 +124,179 @@
     </footer>
 </body>
 </html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <div class="dropdown">
+            <a href="#projects" class="dropdown-toggle">Projects ▼</a>
+            <div class="dropdown-menu">
+                <a href="#project1">Point of Sales System</a>
+                <a href="#project2">Flappy Bitd Dupe</a>
+                <a href="#project3">Registration and Login Form</a>
+                <a href="#project4">HTML Portfolio</a>
+                <a href="#project5">Upgraded HTML Portfolio</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+
+<body>
+
+
+<div class="testimonial-section">
+    <div class="overlay-text">
+        <p>Welcome to my Projects Portfolio!</p>
+    </div>
+    <div class="author-info">
+        <img src="https://raw.githubusercontent.com/jayjayheyhey/Activity3/refs/heads/main/Assets/PICTURE.png">
+        <div>
+            <p class="name">Johanna Villahermosa</p>
+            <p class="title">Student</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Johanna R. Villahermosa. This is an upgraded version of my previous website portfolio as it incorporates css styling and javascript animations. </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+            <div class="projects">
+                <section id = "project1">
+                    <h3>Point of Sales System</h3>
+                    <p>This project is a POS system created to replicate the menu of one of the school cafeteria stalls. It is equipped with admin and worker access and a bunch of other features including file handling and receipt generation.<br><br></p>
+                    <img src="https://raw.githubusercontent.com/jayjayheyhey/Activity3/refs/heads/main/Assets/POS_intro.PNG" width="300" alt="POS System Intro">
+                    <img src="https://raw.githubusercontent.com/jayjayheyhey/Activity3/refs/heads/main/Assets/POS_AdminManagementSystem.PNG" width="300" alt="POS Admin Management">
+                    <img src="https://raw.githubusercontent.com/jayjayheyhey/Activity3/refs/heads/main/Assets/POS_OrderingSystem.PNG" width="300" alt="POS Ordering System">
+                    <img src="https://raw.githubusercontent.com/jayjayheyhey/Activity3/refs/heads/main/Assets/POS_Menu.PNG" width="300" alt="POS Menu">
+                    <img src="https://raw.githubusercontent.com/jayjayheyhey/Activity3/refs/heads/main/Assets/POS_Stalls.PNG" width="300" alt="POS Stalls">
+                    <img src="https://raw.githubusercontent.com/jayjayheyhey/Activity3/refs/heads/main/Assets/POS_Receipt.PNG" width="300" alt="POS Receipt">
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>C++</li>
+                    </ul>
+                    <h4>Github Repository:</h4>
+                        <ul>
+                            <li><a href="https://github.com/jayjayheyhey/POS-System" target="_blank">POS System</a></li>
+                        </ul>
+                </section> 
+            </div>
+            <div class="projects">
+                <section id = "project2">
+                    <h3>Flappy Bird Dupe</h3>
+                    <p>This project was a game we made using the C language. It's supposed to mimic the game Flappy Bird with our game having similar mechanics.<br><br></p>
+                    <img src="https://raw.githubusercontent.com/jayjayheyhey/Activity3/refs/heads/main/Assets/FLAPPY.PNG" width="300" alt="Flappy Bird Clone">
+                    <img src="https://raw.githubusercontent.com/jayjayheyhey/Activity3/refs/heads/main/Assets/FLAPPYGO.PNG" width="300" alt="Flappy Bird Game Over">
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>C</li>
+                    </ul>
+                    <h4>Github Repository:</h4>
+                        <ul>
+                            <li><a href="https://github.com/jayjayheyhey/FLAPPY" target="_blank">FLAPPY</a></li>
+                        </ul>
+                </section> 
+            </div>
+            <div class="projects">
+                <section id = "project3">
+                    <h3>Registration and Login Form</h3>
+                    <p>This project included the incorporation of a database to a registration and login form made with Java.<br><br></p>
+                    <img src="Assets/LOGINFORM.png" width="300" alt="Login Form">
+                    <img src="Assets/UPDATEFORM.png" width="300" alt="Update Form">
+                    <img src="Assets/REGISTRATIONFORM.png" width="300" alt="Registration Form"><br>
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <h4>Github Repository:</h4>
+                        <ul>
+                            <li><a href="https://github.com/jayjayheyhey/LoginFormRegistrationForm" target="_blank">Registration and Login Form</a></li>
+                        </ul>
+                </section> 
+            </div>
+            <div class="projects">
+                <section id = "project4">
+                    <h3>HTML Portfolio (Without Styling) </h3>
+                    <p>This project is the first HTML I've ever made. It serves as a portfolio of past projects that I've done and been part of throughout my college years.<br></p>
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>HTML</li>
+                    </ul>
+                    <h4>Github Repository:</h4>
+                        <ul>
+                            <li><a href="https://github.com/jayjayheyhey/Activity2" target="_blank">Projects Portfolio</a></li>
+                        </ul>
+                </section> 
+            </div>
+            <div class="projects">
+                <section id = "project5">
+                    <h3>HTML Porfolio with CSS and Javascript</h3>
+                    <p>This project is an improvement to my previous HTML projects portfolio as it incorporates CSS for styling and JavaScript for transitions.<br></p>
+                    <h4>Technologies Used:</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <h4>Github Repository:</h4>
+                        <ul>
+                            <li><a href="https://github.com/jayjayheyhey/Activity3" target="_blank">Upgraded Projects Portfolio</a></li>
+                        </ul>
+                </section> 
+            </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <form action="mailto:villahermosajohanna96@gmail.com" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    
+</div>
+<footer>
+        <p>&copy; 2024 Johanna Villahermosa. All Rights Reserved</p>
+        <p>Connect with me:
+            <a href="https://github.com/jayjayheyhey" target="_blank">GitHub</a>,
+            <a href="https://www.linkedin.com/in/johanna-villahermosa-175295330/" target="_blank">LinkedIn</a>, and
+            <a href="mailto:villahermosajohanna96@gmail.com">Gmail</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+

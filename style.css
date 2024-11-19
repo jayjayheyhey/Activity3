@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Reset
 * {
     margin: 0;
     padding: 0;
@@ -14,16 +14,28 @@ body {
     padding: 0 10px;
 }
 
-/* Header */
+/* Header
+
+header {
+    text-align: center;
+    height: 11vh;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+/*
 header {
     text-align: center;
     padding: 20px 0;
     background: rgba(255, 255, 255, 0.8);
 }
 
-header h1 {
-    font-size: 2.5rem;
-    color: #007BFF;
+
+h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    padding-top: 19px;
+    padding-left: 90px;
 }
 
 nav a {
@@ -38,7 +50,70 @@ nav a:hover {
     color: #007BFF;
 }
 
-/* Sections */
+/*Testimonial Section
+.testimonial-section {
+    position: relative;
+    background-image: url('https://raw.githubusercontent.com/jayjayheyhey/Activity-3/refs/heads/main/Assets/testimonial.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(224, 208, 208);
+    text-align: left;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.center-image {
+    width: 200px;
+    height: auto;
+}
+
+.overlay-text p {
+    font-size: 2em;
+    font-weight: bold;
+    max-width: 100%;
+    margin: auto;
+    line-height: 1.2em;
+}
+
+.author-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.author-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-info .name {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.author-info .title {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Sections
 section {
     padding: 30px 10px;
 }
@@ -70,7 +145,7 @@ article img:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Experience Section */
+/* Experience Section
 ul {
     list-style-type: none;
     padding-left: 20px;
@@ -80,7 +155,7 @@ ul li {
     margin: 5px 0;
 }
 
-/* Contact Form */
+/* Contact Form
 form label {
     font-weight: bold;
     display: block;
@@ -110,7 +185,7 @@ form button:hover {
     background: #0056b3;
 }
 
-/* Footer */
+/* Footer
 footer {
     text-align: center;
     padding: 20px;
@@ -132,7 +207,7 @@ footer a:hover {
     color: #0056b3;
 }
 
-/* Grid & Responsiveness */
+/* Grid & Responsiveness
 #projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -151,4 +226,259 @@ footer a:hover {
     article img {
         width: 100%;
     }
+}
+
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 11vh;
+    background-color: rgb(188, 172, 172);
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Abril Fatface', serif;
+    color: rgb(0, 0, 0);
+    padding-top: 19px;
+    padding-left: 90px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(221, 145, 145);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #9c6060;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2, h3, h4 {
+    font-family: Merriweather, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.projects {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #b56666a0;
+    border-radius: 5px;
+}
+
+nav a{
+    font-size: 1em;
+    font-weight: normal;
+    font-family: Merriweather, sans-serif;
+    max-width: 100%;
+    line-height: 1em;
+    padding-top: 10px;
+    padding-left: 40px;
+    justify-content: flex-end;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #473131;
+}
+
+nav a, .dropdown {
+    margin: 0 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(188, 172, 172);
+}
+
+
+.testimonial-section {
+    position: relative;
+    background-image: url('https://raw.githubusercontent.com/jayjayheyhey/Activity-3/refs/heads/main/Assets/testimonial.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(224, 208, 208);
+    text-align: left;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.center-image {
+    width: 200px;
+    height: auto;
+}
+
+.overlay-text p {
+    font-size: 2em;
+    font-weight: bold;
+    max-width: 100%;
+    margin: auto;
+    line-height: 1.2em;
+}
+
+.author-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.author-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-info .name {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.author-info .title {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.projects h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.projects h4 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.projects ul,
+.projects ol {
+    margin-left: 20px;
+}
+
+.projects ul li,
+.projects ol li {
+    margin-bottom: 10px;
+}
+
+.projects p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.projects a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.projects a:hover {
+    color: #0077cc;
+}
+
+.project-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.project-images-grid img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-images-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
