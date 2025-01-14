@@ -11,6 +11,13 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+document.querySelectorAll('.animate').forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(50px)';
+    section.style.transition = 'opacity 1s ease, transform 1s ease';
+    observer.observe(section);
+});
+
 const projectImages = document.querySelectorAll('#projects img');
 
 projectImages.forEach(image => {
